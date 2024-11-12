@@ -1,3 +1,38 @@
 str = input()
 
 print(str)
+
+def solution(a, b):
+    # 제한사항 검사
+    if not (-100000 <= a <= 100000) or not (-100000 <= b <= 100000):
+        return "Error: a and b must be within the range -100,000 to 100,000."
+    
+    # 제한사항을 만족하는 경우 결과 출력
+    return f"a = {a}\nb = {b}"
+
+# 입력 받기
+a, b = map(int, input().split())
+
+# 결과 출력
+print(solution(a, b))
+
+# 문자열 반복해서 출력하기
+str, n = input().strip().split(' ')
+n = int(n)
+
+result = str * n
+
+print(result)
+
+# 대소문자 바꿔서 출력하기
+# 입력 받기
+str = input()
+
+# 대소문자 변환
+result = str.swapcase()
+
+# 결과 출력
+print(result)
+
+# Printing special characters
+print("!@#$%^&*(\\\'\"<>?:;")
